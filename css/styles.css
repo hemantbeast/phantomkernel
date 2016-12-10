@@ -1,0 +1,505 @@
+/* Main CSS File */
+body {
+  margin: 0;
+}
+
+/* Disable ugly boxes around images in IE10 */
+a img{
+  border: 0px;
+}
+
+::-moz-selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+::selection {
+  background-color: #6ab344;
+  color: #fff;
+}
+
+.phantom-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.phantom-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+
+.mdl-textfield--expandable {
+  width: auto;
+}
+
+.phantom-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: #64ffda !important;
+  color: black !important;
+}
+
+.phantom-mobile-title {
+  display: none !important;
+}
+
+
+.phantom-logo-image {
+  height: 24px;
+  width: 180px;
+  margin-left: -20px;
+}
+
+
+.phantom-header {
+  overflow: visible;
+  background-color: white;
+}
+
+  .phantom-header .material-icons {
+    color: #767777 !important;
+  }
+
+  .phantom-header .mdl-layout__drawer-button {
+    background: transparent;
+    color: #767777;
+  }
+
+  .phantom-header .mdl-navigation__link {
+    color: #757575;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .phantom-navigation-container {
+    /* Simple hack to make the overflow happen to the left instead... */
+    direction: rtl;
+    -webkit-order: 1;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 500px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
+        width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .phantom-navigation {
+    /* ... and now make sure the content is actually LTR */
+    direction: ltr;
+    -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    width: 800px;
+  }
+
+  .phantom-search-box.is-focused + .phantom-navigation-container {
+    opacity: 0;
+    width: 100px;
+  }
+
+
+  .phantom-navigation .mdl-navigation__link {
+    display: inline-block;
+    height: 60px;
+    line-height: 68px;
+    background-color: transparent !important;
+    border-bottom: 4px solid transparent;
+  }
+
+    .phantom-navigation .mdl-navigation__link:hover {
+      border-bottom: 4px solid #8bc34a;
+    }
+
+  .phantom-search-box {
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .phantom-more-button {
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+
+
+.phantom-drawer {
+  border-right: none;
+}
+
+  .phantom-drawer-separator {
+    height: 1px;
+    background-color: #dcdcdc;
+    margin: 8px 0;
+  }
+
+  .phantom-drawer .mdl-navigation__link.mdl-navigation__link {
+    font-size: 14px;
+    color: #757575;
+  }
+
+  .phantom-drawer span.mdl-navigation__link.mdl-navigation__link {
+    color: #8bc34a;
+  }
+
+  .phantom-drawer .mdl-layout-title {
+    position: relative;
+    background: #6ab344;
+    height: 160px;
+  }
+
+    .phantom-drawer .phantom-logo-image {
+      position: absolute;
+      bottom: 16px;
+    }
+
+.phantom-welcome-section {
+  position: relative;
+  height: 800px;
+  width: auto;
+  background-color: #f3f3f3;
+  background: url('../images/slide02.jpg') center 30% no-repeat;
+  background-size: cover;
+}
+
+.logo-font {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  line-height: 1;
+  color: #767777;
+  font-weight: 500;
+}
+
+.phantom-slogan {
+  font-size: 60px;
+  padding-top: 160px;
+}
+
+.phantom-font-slogan {
+  font-size: 60px;
+  padding-top: 60px;
+}
+
+.phantom-sub-slogan {
+  font-size: 21px;
+  padding-top: 24px;
+}
+
+.phantom-create-character {
+  font-size: 21px;
+  padding-top: 400px;
+}
+
+  .phantom-create-character a {
+    text-decoration: none;
+    color: #767777;
+    font-weight: 300;
+  }
+
+.phantom-features-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+.phantom-list-icon {
+  width: 300px;
+}
+
+.phantom-list-name {
+  color: white;
+  width: 800px
+}
+
+.phantom-list-text {
+  max-width: 1500px;
+  margin-left: 20%;
+  text-align: left;
+  color: white;
+}
+
+ .phantom-list-item  {
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 21px;
+  font-weight: 210;
+  text-align: center;
+  margin-left: 10%;
+  width: 800px;
+}
+
+.phantom-howto-section {
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  background-color: #46B6AC;
+}
+
+.phantom-downloads {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  background-color: #314568;
+}
+
+.phantom-downloads-section {
+  position: relative;
+  background-size: cover;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #314568;
+  height: 300px;
+}
+
+.phantom-downloads-table {
+  position: relative;
+  background-size: cover;
+  bottom: 0;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+  background-color: #00bcd4;
+}
+
+.phantom-downloads-pad {
+  max-width: 800px;
+  margin-left: 20%;
+  padding: 24px;
+  text-align: left;
+}
+
+.phantom-downloads-text {
+  max-width: 800px;
+  margin-left: 20%;
+  padding: 24px;
+  text-align: left;
+  color: white;
+}
+
+  .phantom-downloads-text p {
+    padding: 24px;
+  }
+
+.phantom-link {
+  text-decoration: none;
+  color: #8bc34a !important;
+}
+
+  .phantom-link:hover {
+    color: #7cb342 !important;
+  }
+
+  .phantom-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+  }
+
+.phantom-alt-link {
+  text-decoration: none;
+  color: #001be4 !important;
+  font-size: 16px;
+}
+
+  .phantom-alt-link:hover {
+    color: #00bfa5 !important;
+  }
+
+  .phantom-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+.phantom-button-section {
+  position: relative;
+  background-size: cover;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #314568;
+  height: 300px;
+}
+
+.phantom-button {
+  font-size: 20px;
+  margin: 20px;
+  color: #77c159;
+}
+
+.phantom-card-section {
+  position: relative;
+  padding-top: 60px;
+}
+
+.phantom-card-square.mdl-card {
+  display: inline-flex;
+  width: 340px;
+  height: 320px;
+  margin:5% 10%;
+}
+
+.phantom-card-square > .mdl-card__title {
+  color: #fff;
+  background:url('../images/Tux.png') bottom right 15% no-repeat #46B6AC;
+}
+
+.phantom-card-square1.mdl-card {
+  display: inline-flex;
+  width: 340px;
+  height: 320px;
+  margin:5% 10%;
+}
+
+.phantom-card-square1 > .mdl-card__title {
+  color: #fff;
+  background:url('../images/android.png') bottom right 10% no-repeat #46B6AC;
+}
+
+.phantom-card-container {
+}
+
+  .phantom-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+  }
+
+    .phantom-card-container .mdl-card__media img {
+      width: 100%;
+    }
+
+  .phantom-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+  }
+
+  .phantom-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+  }
+
+  .phantom-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+  }
+
+  .phantom-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .phantom-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+  }
+
+.phantom-footer {
+  background-color: #fafafa;
+  position: relative;
+}
+
+  .phantom-footer a:hover {
+    color: #8bc34a;
+  }
+
+  .phantom-footer .mdl-mega-footer--top-section::after {
+    border-bottom: none;
+  }
+
+  .phantom-footer .mdl-mega-footer--middle-section::after {
+    border-bottom: none;
+  }
+
+  .phantom-footer .mdl-mega-footer--bottom-section {
+    position: relative;
+  }
+
+  .phantom-footer .mdl-mega-footer--bottom-section a {
+    margin-right: 2em;
+  }
+
+  .phantom-footer .mdl-mega-footer--right-section a .material-icons {
+    position: relative;
+    top: 6px;
+  }
+
+
+.phantom-link-menu:hover {
+  cursor: pointer;
+}
+
+
+/**** Mobile layout ****/
+@media (max-width: 900px) {
+  .phantom-navigation-container {
+    display: none;
+  }
+
+  .phantom-title {
+    display: none !important;
+  }
+
+  .phantom-mobile-title {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+     consecutive "+" operators in some cases. Therefore, we need to use both
+     here to cover all the bases. */
+  .phantom.phantom-search-box.is-focused ~ .phantom-mobile-title,
+  .phantom-search-box.is-focused + .phantom-navigation-container + .phantom-mobile-title {
+    opacity: 0;
+  }
+
+  .phantom-more-button {
+    display: none;
+  }
+
+  .phantom-search-box.is-focused {
+    width: calc(100% - 48px);
+  }
+
+  .phantom-search-box .mdl-textfield__expandable-holder {
+    width: 100%;
+  }
+
+  .phantom-be-together-section {
+    height: 350px;
+  }
+
+  .phantom-slogan {
+    font-size: 26px;
+    margin: 0 16px;
+    padding-top: 24px;
+  }
+
+  .phantom-sub-slogan {
+    font-size: 16px;
+    margin: 0 16px;
+    padding-top: 8px;
+  }
+
+  .phantom-create-character {
+    padding-top: 200px;
+    font-size: 16px;
+  }
+
+  .phantom-create-character img {
+    height: 12px;
+  }
+
+  .phantom-fab {
+    display: none;
+  }
+
+  .phantom-footer .mdl-mega-footer--bottom-section {
+    display: none;
+  }
+}
